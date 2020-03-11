@@ -75,7 +75,8 @@ class MealDetailScreen extends StatelessWidget {
                   ),
                 ),
               ),
-            ), // buildContainer for Ingrediant,
+            ),
+            // buildContainer for Ingrediant,
             buildSectionTitle(context, 'Steps'),
             buildContainer(
                 context,
@@ -89,7 +90,7 @@ class MealDetailScreen extends StatelessWidget {
                         ),
                         title: Text(selectedMeal.steps[index]),
                       ),
-                      Divider(),
+                      Divider(color: Colors.black38,),
                     ],
                   ),
                 )),

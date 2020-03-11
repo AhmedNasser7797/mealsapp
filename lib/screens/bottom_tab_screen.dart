@@ -17,7 +17,9 @@ int _selectedPAgeIndex=0;
   void _selectedPage(index){
 setState(() {
   _selectedPAgeIndex=index;
+
 });
+//print(index);
   }
 
   @override
@@ -45,11 +47,13 @@ setState(() {
 
         onTap: _selectedPage,
         items: [
+          //index 0
           BottomNavigationBarItem(
             icon: Icon(Icons.category,),
             title: Text('Categories')
           ),
 
+          //index 1
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
             title: Text('Favorites')
